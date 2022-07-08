@@ -4,8 +4,13 @@ import { createRouter, createWebHistory } from 'vue-router'
 const routes = [
   {
     path: '/',
-    name: 'food.Home',
-    component: () => import('../views/food/Home.vue')
+    name: 'food.IndexView',
+    component: () => import('../views/food/IndexView.vue')
+  },
+  {
+    path: '/create',
+    name: 'create',
+    component: () => import('../components/Hero.vue')
   }
 ]
 const router = createRouter({

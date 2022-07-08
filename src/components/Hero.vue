@@ -20,12 +20,12 @@
           <div class="modal-body">
             <form>
               <div class="mb-3">
-                <label class="form-label">Nama</label>
-                <input type="form" class="form-control" >
+                <label for="nama" class="form-label">nama</label>
+          <input type="text" class="form-control" id="nama" placeholder="Enter nama">
               </div>
               <div class="mb-3">
                 <label class="form-label">Harga</label>
-                <input type="number" min="2" max="10" step="0.2" class="form-control">
+                <input type="number" min="2" max="10" step="0.2" class="form-control" id="pengeluaraan" placeholder="Enter pengeluaraan" >
               </div>
               <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                 <button class="btn btn-secondary" type="button" data-bs-target="#exampleModalToggle2"
@@ -44,6 +44,7 @@
 <script>
 export default {
   name: 'App',
+  props: ['item']
 };
 </script>
 
